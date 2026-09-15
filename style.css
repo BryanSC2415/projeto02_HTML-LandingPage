@@ -57,3 +57,90 @@
   margin: 0 auto;
   color: var(--texto-suave);
 }
+
+.cartao-inscricao {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #1a0b3d;
+  border-radius: 12px;
+  border: 1px solid var(--azul);
+}
+
+.formulario-titulo {
+  color: var(--texto);
+  margin-bottom: 0.5rem;
+}
+
+.formulario-texto {
+  color: var(--texto-suave);
+  margin-bottom: 1.5rem;
+}
+
+.formulario-label {
+  display: block;
+  color: var(--texto-suave);
+  margin-bottom: 0.4rem;
+}
+
+.formulario-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  font: inherit;
+  color: var(--texto);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+}
+
+.formulario-input:focus {
+  outline: none;
+  border-color: var(--azul);
+}
+
+.botao {
+  display: inline-block;
+  width: 100%;
+  padding: 0.85rem;
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: transform 0.15s ease;
+}
+
+.botao-primario {
+  background: var(--azul);
+  color: #ffffff;
+}
+
+.botao-secundario {
+  background: transparent;
+  color: var(--texto);
+  border: 1px solid var(--texto);
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+}
+
+.mensagem-sucesso {
+  display: none;
+}
+
+.mensagem-sucesso:target {
+  display: block;
+}
+
+.mensagem-sucesso:target + .formulario {
+  display: none;
+}
+
+.formulario-input:invalid ~ .botao-primario {
+  pointer-events: none;
+  opacity: 0.5;
+}
