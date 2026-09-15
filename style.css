@@ -12,3 +12,22 @@
   --texto: #f5f3ff;
   --texto-suave: #c7bfe6;
 }
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: var(--fundo);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu a {
+  color: var(--texto);
+  text-decoration: none;
+}
