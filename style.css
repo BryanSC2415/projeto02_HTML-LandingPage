@@ -170,3 +170,20 @@ h2 {
   pointer-events: none;
   opacity: 0.5;
 }
+
+.onibus-flutuante {
+  position: fixed;
+  top: 15%;
+  left: -250px;
+  width: 220px;
+  animation: flutuar 10s linear infinite;
+}
+
+@keyframes flutuar {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(100vw + 500px));
+  }
+}
